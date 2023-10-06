@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios UTCH</title>
+    
+    <style>
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: aquamarine;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        td {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Horarios UTCH</h1>
+    <h1>Horarios del grupo TID31M</h1>
+
+    <form method="post" action="horarios2.php">
+        <label for="selectDia">Selecciona un día:</label>
+        <select id="selectDia" name="dia">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sabadrink">Sabadrink</option>
+            <option value="Domingo">Domingo</option>
+        </select>
+        <button type="submit" name="filtrar">Filtrar</button>
+    </form>
+    
+</body>
+</html>
